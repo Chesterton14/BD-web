@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=MtEIKYdOYnAinQs3yHc2XD6DnoXsB1RT"></script>
+		
+		
+		<style>
+		
+		html{
+			height:100%
+		}    
+		body{
+			height:100%;
+		}    
+		#container{
+			height:100%
+		}
+		.btn{
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+		}
+			
+		.header{
+			position: absolute;
+			top: 5px;
+			left: 0px;
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			
+		}
+		.searchBar{
+			width: 95%;
+			height: 40px;
+			margin: 0 auto;
+			background-color: white;
+			border: 1px solid white;
+			border-radius: 10px;
+		}
+		.iconMenu{
+			
+			width: 40px;
+			height: 40px;
+		}
+		.inputGroup{
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			padding-left: 40px;
+			background-color: white;
+			border: 1px solid white;
+			border-radius: 10px;
+		}
+		.inputGroup input{
+			display: inline-block;
+			width: 100%;
+			height: 38px;
+			border: none;
+			background-color: white;
+			border: 1px solid white;
+			border-radius: 10px;
+		}
+	</style>
+	</head>
+	<body>
+
+		<div id="container"></div>
+		<header class="header">
+			<div class="searchBar">
+				<span class="iconMenu"></span>
+				<div class="inputGroup">
+					<input type="text" id="" placeholder="选择时间" />
+				</div>
+			</div>
+		</header>
+		
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var map = new BMap.Map("container");
+				var point = new BMap.Point(113.484908, 23.107454);
+				map.centerAndZoom(point, 18);
+			}
+		</script>
+	</body>
+</html>
