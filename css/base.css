@@ -50,9 +50,3 @@ input,textarea{
 	clear: both;
 	font-size: 0;
 }
-/* 使用精灵图的公共样式 */
-[class^="icon_"],[class*=" icon_"]{
-	background-repeat: no-repeat;
-	background-image: url(../img/sprites.png);
-	background-size: 200px 200px;
-}
